@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--define linguagem da pagina-->
+<head> <!--O elemento HTML <head> providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos.-->
+    <meta charset="utf-8"> <!-- indica a biblioteca html a ser usada-->
+    <title>MusicDot</title> <!--titulo da pagina-->
+    <meta charset="utf-8">
+    <style> /* tag pra definir estilos de fonte ou texto*/
+        .paragrafo2 { /* nome da "div class" que devera ser usado para usar o estilo*/
+            color: greenyellow; /* cor da fonte*/
+            background-color: blueviolet; /* cor do fundo*/
+        }
+        .textolegal {
+            color: red;
+            background-color: aqua;
+            font-family: 'Courier New', Courier, monospace; 
+        }
+        @font-face {
+            font-family: "minecraftia";
+            src: local("font/minecraftia/Minecraftia-Regular.ttf"),
+                 url("font/minecraftia/Minecraftia-Regular.ttf") format("ttf");
+        }
+        .body2 {
+            font-family: "minecraftia";
+        }
+    </style>
+</head> <!--tag de fim dos metadados do site-->
+
+<body> <!--inicio do corpo do site-->
+    <body bgcolor="#d6ecf3"> <!--cor do fundo -->
+    <div class="body2">
+        <h1>MusicDot</h1>
+    </div>
+    <h2>Bem-vindo à MusicDot, seu portal de cursos de música online.</h2>
+    <p>A MusicDot é a maior escola online de música em todo o mundo.</p> <!--tag"p" = paragrafo-->
+    <p>Nossa matriz fica em Mafra, em Santa Catarina. De lá, saem grande parte das gravações de nossos cursos.</p>
+
+    <figure>
+        <img src="img/matriz-musicdot.png" alt="Foto da matriz da musicdot"> <!--img src = procura o arquivo e funciona em outros computadores-->
+        <figcaption>Matriz da MusicDot</figcaption> <!--descrição da foto-->
+    </figure>
+
+    <ul> <!--indica inicio de lista-->
+        <li>Confira nossas promoções.</li> <!--l1 = linha da lista-->
+        <li>Receba informações sobre nossos lançamentos por email.</li>
+        <li>Navegue por todos nossos cursos disponíveis.</li>
+        <li>Aprenda sem sair de casa.</li>
+    </ul>  <!--indica fim de lista-->
+
+    <p>Aprenda de um jeito rápido e barato na <strong>MusicDot</strong>.</p> <!--strong= negrito-->
+
+    <div class="paragrafo2"> <!--usa a class "paragrafo2" para fonte do texto-->
+        <p>teste</p>
+    </div>
+
+    <div class="textolegal"> <!--usa a class "textolegal" para fonte do texto-->
+        <p>teste 2</p>
+    </div>
+
+    <div class="body2"> <!--usa a class "body2" para fonte do texto-->
+        <p>Teste dessa porra do krl</p>
+    </div>
+
+    <div class="body2"> <!--usa a class "body2" para fonte do texto-->
+        <h1>OLHA O TEXTO DO MINE DO</h1>
+    </div>
+</body>
+</html>
