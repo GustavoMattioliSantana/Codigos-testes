@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+<title>Imagens Empilhadas com Texto</title>
+<style>
+  body {
+    background-image: url('images/faca-uma-paisagem-de-uma-floresta-pixelado-adicion-5sd9a8EUTWm--ItR7ZlYMg-LprOaSz3RiCjJJkca09LGw.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .imagem {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .texto {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(0, 0, 0); /* Ajusta a cor do texto para contrastar com o fundo */
+  }
+
+  .imagem-botao {
+    cursor: pointer; /* Define o cursor como ponteiro */
+  }
+            .style {
+                    @font-face 
+                            font-family: "minecraftia";
+                            src:
+                            local("font\minecraftia\Minecraftia-Regular.ttf"),
+                            url("font\minecraftia\Minecraftia-Regular.ttf") format("ttf") } /* definição da fonte customizada e onde esta localizada*/
+                     .body2 {
+                            text-align: center;
+                            text-shadow: 0 0 5px white; /* Adiciona um contorno branco ao texto */
+                            color: rgb(0, 0, 0); /* Ajusta a cor do texto para contrastar com o fundo */    
+                            font-family: "minecraftia"   } /*define "body2" como um padrão para uso da fonte "minecraftia"*/
+                 </style> 
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img id="imagem1" src="images\WhatsApp_Image_2024-04-02_at_10.12.21-removebg-preview (1).png" alt="Imagem 1" class="imagem">
+  <img id="imagem2" src="images\a-pixelated-and-vintage-styled-r.png" alt="Imagem 2" class="imagem imagem-botao" onclick="abrirTamagotchi()">
+</div>
+
+<div class="body2">
+  <h1>Curiosidades sobre o projeto:</h1>
+  <p>✧ O nome do site foi dado por causa de uma espécie de coruja que nos baseamos para o modelo da nossa personagem.</p>
+  <p>✧ Nesse projeto por que o tamagotchi? Porque ele é um brinquedo muito saudosista, então pensamos por que não dar um pouco mais de inteligência a ele?</p>
+</div>
+
+<script>
+  function abrirTamagotchi() {
+    var imagem2 = document.getElementById('imagem2');
+    imagem2.style.display = 'none'; // Oculta a segunda imagem (botão)
+    // Aqui você pode adicionar código para abrir a extensão Python do Tamagotchi
+    // Por exemplo, abrir uma nova janela do navegador com a extensão ou redirecionar para a URL da extensão
+    // window.open('url_da_extensao_python', '_blank');
+    // Ou redirecionar para a URL da extensão
+    window.location.href = 'jogo.py';
+  }
+</script>
+
+</body>
+</html>

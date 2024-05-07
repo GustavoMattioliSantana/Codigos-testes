@@ -1,0 +1,32 @@
+
+
+  .container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .imagem {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .texto {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(0, 0, 0); /* Ajusta a cor do texto para contrastar com o fundo */
+  }
+
+  .imagem-botao {
+    cursor: pointer; /* Define o cursor como ponteiro */
+  }
+            .style {
+                    @font-face 
+                            font-family: "minecraftia";
+                            src:
+                            local("font\minecraftia\Minecraftia-Regular.ttf"),
+                            url("font\minecraftia\Minecraftia-Regular.ttf") format("ttf") } /* definição da fonte customizada e onde esta localizada*/
+                     .body2 {
+                            text-align: center;
+                            text-shadow: 0 0 5px white; /* Adiciona um contorno branco ao texto */
+                            color: rgb(0, 0, 0); /* Ajusta a cor do texto para contrastar com o fundo */    
+                            font-family: "minecraftia"   } /*define "body2" como um padrão para uso da fonte "minecraftia"*/
